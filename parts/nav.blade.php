@@ -1,8 +1,8 @@
-<nav class="fixed w-full bg-red-300">
+<nav class="fixed z-40 w-full bg-red-300">
     <div class="body-margin">
         <div class="flex justify-between items-center h-24">
             <div>
-                <h1 class="font-bold text-black text-xl uppercase">{{ config('app.name') }}</h1>
+                <p class="font-bold text-black text-xl uppercase">{{ config('app.name') }}</p>
             </div>
 
             <div>

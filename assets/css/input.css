@@ -23,3 +23,11 @@ body {
 .body-margin {
     @apply  xl:mx-64 lg:mx-32 md:mx-16 sm:mx-8 mx-4;
 }
+
+.post-content {
+    @apply w-full md:w-[70%];
+}
+
+.sidebar {
+    @apply w-full md:w-[20%];
+}
