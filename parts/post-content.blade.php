@@ -7,7 +7,7 @@
 
         {{-- Post meta --}}
         <div class="text-xs">
-            <p>By {{ $post->author }}</p>
+            <p>By <a class="link" href="">{{ $post->author }}</a></p>
         </div>
 
         {{-- Post content --}}

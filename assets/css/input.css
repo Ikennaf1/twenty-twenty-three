@@ -24,6 +24,14 @@ body {
     @apply  xl:mx-64 lg:mx-32 md:mx-16 sm:mx-8 mx-4;
 }
 
+.bg-primary {
+    @apply bg-[#f87060];
+}
+
+.link {
+    @apply text-[#102542] hover:text-black transition duration-500;
+}
+
 .post-content {
     @apply w-full md:w-[70%];
 }
