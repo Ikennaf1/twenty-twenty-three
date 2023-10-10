@@ -2,7 +2,7 @@
     <div class="body-margin">
         <div class="flex justify-between items-center h-24">
             <div>
-                <p class="font-bold text-black text-xl uppercase">{{ config('app.name') }}</p>
+                <a href="{{ homeUrl() }}" class="font-bold link text-xl uppercase">{{ config('app.name') }}</a>
             </div>
 
             <div>
