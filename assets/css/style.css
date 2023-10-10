@@ -2425,6 +2425,7 @@ body {
 }
 
 .link{
+  font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(16 37 66 / var(--tw-text-opacity));
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;

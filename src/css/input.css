@@ -29,7 +29,7 @@ body {
 }
 
 .link {
-    @apply text-[#102542] hover:text-black transition duration-500;
+    @apply text-[#102542] font-bold hover:text-black transition duration-500;
 }
 
 .post-content {

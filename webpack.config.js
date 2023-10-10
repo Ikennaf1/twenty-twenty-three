@@ -3,8 +3,8 @@ const path = require('path');
 module.exports = {
     mode: "production",
     entry: [
-        './assets/js/index.js',
-        './assets/js/show.js',
+        './src/js/index.js',
+        './src/js/show.js',
     ],
     output: {
         filename: 'script.js',
