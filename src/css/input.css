@@ -42,6 +42,10 @@ body {
     @apply fixed z-40 w-full border-b border-primary-color body-bg;
 }
 
+.header-img {
+    @apply w-full h-64 overflow-hidden;
+}
+
 .post-content {
     @apply w-full md:w-[70%];
 }

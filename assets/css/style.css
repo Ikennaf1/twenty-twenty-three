@@ -2445,6 +2445,12 @@ body {
   background-color: #f8f9fa;
 }
 
+.header-img{
+  height: 16rem;
+  width: 100%;
+  overflow: hidden;
+}
+
 .post-content{
   width: 100%;
 }
