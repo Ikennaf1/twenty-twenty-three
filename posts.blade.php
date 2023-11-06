@@ -16,7 +16,7 @@
             <div>
                 @include('front.parts.nav')
                 <div class="header-img">
-                    <img src="/assets/img/pexels--931887.jpg"
+                    <img src="{{ homeUrl("/assets/img/pexels--931887.jpg", 0) }}"
                     style="width: 100%; height: 100%; object-position: center; object-fit: cover;"
                     alt="Header Image" />
                 </div>
