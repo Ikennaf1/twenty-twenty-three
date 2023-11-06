@@ -2477,27 +2477,26 @@ body {
   gap: 0.5rem;
   overflow: hidden;
   border-radius: 0.5rem;
-  border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
-@media (min-width: 640px){
-  .post-container{
-    height: 16rem;
-    width: 12rem;
-  }
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
 }
 
 @media (min-width: 768px){
   .post-container{
+    height: 18rem;
+    width: 12rem;
     flex-direction: column;
   }
 }
 
 .post-list-img{
   height: 100%;
-  width: 8rem;
+  width: 16rem;
   overflow: hidden;
 }
 
@@ -2512,10 +2511,15 @@ body {
 .post-list-body{
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  padding: 1rem;
+  justify-content: space-around;
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+@media (min-width: 768px){
+  .post-list-body{
+    gap: 0.5rem;
+  }
 }
 
 .post-title{
@@ -2524,7 +2528,6 @@ body {
 
 .post-desc {
   display: -webkit-box;
-  white-space: nowrap;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -2532,7 +2535,6 @@ body {
 
 .post-desc p {
   display: -webkit-box;
-  white-space: nowrap;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
   -webkit-line-clamp: 2;
@@ -2542,7 +2544,73 @@ body {
 }
 
 .post-list-footer{
+  display: none;
+  justify-content: flex-start;
+}
+
+@media (min-width: 768px){
+  .post-list-footer{
+    display: flex;
+  }
+}
+
+.post-list-footer span{
+  border-radius: 0.25rem;
+  border-width: 1px;
+  border-color: var(--primary-color);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+.post-list-footer span:hover{
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.post-list-footer-sm{
   display: flex;
+  justify-content: flex-start;
+}
+
+@media (min-width: 768px){
+  .post-list-footer-sm{
+    display: none;
+  }
+}
+
+.post-list-footer-sm span{
+  border-radius: 0.25rem;
+  border-width: 1px;
+  border-color: var(--primary-color);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+.post-list-footer-sm span:hover{
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 .sidebar{
@@ -2616,6 +2684,16 @@ body {
 @media (min-width: 640px){
   .sm\:underline{
     text-decoration-line: underline;
+  }
+}
+
+@media (min-width: 768px){
+  .md\:flex{
+    display: flex;
+  }
+
+  .md\:hidden{
+    display: none;
   }
 }
 

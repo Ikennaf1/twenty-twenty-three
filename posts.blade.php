@@ -39,11 +39,16 @@
                                         <div class="post-desc">
                                             <p><?= $post->description != null
                                                 ? $post->description
-                                                : $post->content ?>
+                                                : substr($post->content, 0, 75) ?>
                                             </p>
                                         </div>
+                                        <div class="post-list-footer-sm">
+                                            <a class="md:hidden" href="/posts/{{$post->id}}"><span>Read</span></a>
+                                        </div>
                                     </div>
-                                    <div class="post-list-footer"></div>
+                                    <div class="hidden md:flex post-list-footer">
+                                        <a href="/posts/{{$post->id}}"><span>Read</span></a>
+                                    </div>
                                 </div>
                             @endforeach
                         </div>
