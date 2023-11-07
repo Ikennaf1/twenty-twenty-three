@@ -48,11 +48,11 @@
                                             </p>
                                         </div>
                                         <div class="post-list-footer-sm">
-                                            <a class="md:hidden" href="/posts/{{$post->id}}"><span>Read</span></a>
+                                            <a class="md:hidden" href="{{ exportLink("/posts/$post->link") }}"><span>Read</span></a>
                                         </div>
                                     </div>
                                     <div class="hidden md:flex post-list-footer">
-                                        <a href="/posts/{{$post->id}}"><span>Read</span></a>
+                                        <a href="{{ exportLink("/posts/$post->link") }}"><span>Read</span></a>
                                     </div>
                                 </div>
                             @endforeach
