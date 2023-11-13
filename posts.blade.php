@@ -5,8 +5,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         {{-- <meta name="csrf-token" content="{{ csrf_token() }}"> --}}
-        <link rel="stylesheet" href="{{ homeUrl('/assets/css/style.css') }}">
-        <script type="text/javascript" src="{{ homeUrl('/assets/js/script.js') }}" defer></script>
+        <link rel="stylesheet" href="{{ homeUrl('/assets/css/style.css', 1) }}">
+        <script type="text/javascript" src="{{ homeUrl('/assets/js/script.js', 1) }}" defer></script>
         <title>{{ config("app.name", "Blasta") }} | Home</title>
     </head>
 
@@ -43,7 +43,7 @@
                                         </div>
                                         <div class="post-desc">
                                             <p><?= $post->description != null
-                                                ? $post->description
+                                                ? substr($post->description, 0, 75)
                                                 : substr($post->content, 0, 75) ?>
                                             </p>
                                         </div>
