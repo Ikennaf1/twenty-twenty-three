@@ -141,3 +141,7 @@ body {
 .sidebar {
     @apply w-full md:w-[20%];
 }
+
+.sidebar-container {
+    @apply h-[100%] text-xs;
+}
