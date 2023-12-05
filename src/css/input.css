@@ -145,3 +145,11 @@ body {
 .sidebar-container {
     @apply h-[100%] text-xs;
 }
+
+.sidebar-widget-title {
+    @apply font-bold border-l border-l-4 border-l-primary-color pl-2 py-1 bg-gray-200;
+}
+
+.sidebar-widget-body {
+    @apply pl-3;
+}
