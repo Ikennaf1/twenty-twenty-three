@@ -3,7 +3,7 @@
 @endphp
 
 <div class="sidebar-container">
-    <div class="sticky top-40 border-l">
+    <div class="sticky top-40">
         @if (!empty($widgets))
             @foreach ($widgets as $widget)
                 <div class="flex flex-col gap-1">
