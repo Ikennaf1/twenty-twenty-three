@@ -2697,6 +2697,8 @@ body {
   /* width: 100%;
     height: auto; */
   margin: auto;
+  height: auto;
+  width: 100%;
 }
 
 .post-list-footer{
