@@ -2693,6 +2693,12 @@ body {
   overflow: hidden;
 }
 
+.post-content main p img {
+  /* width: 100%;
+    height: auto; */
+  margin: auto;
+}
+
 .post-list-footer{
   display: none;
   justify-content: flex-start;

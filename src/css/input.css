@@ -122,6 +122,12 @@ body {
     @apply overflow-hidden w-full;
 }
 
+.post-content main p img {
+    /* width: 100%;
+    height: auto; */
+    @apply m-auto;
+}
+
 .post-list-footer {
     @apply hidden md:flex justify-start;
 }
