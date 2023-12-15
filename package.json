@@ -23,8 +23,6 @@
   },
   "homepage": "https://github.com/Ikennaf1/twenty-twenty-three#readme",
   "devDependencies": {
-    "tailwindcss": "^3.3.3",
-    "webpack": "^5.88.2",
-    "webpack-cli": "^5.1.4"
+    "tailwindcss": "^3.3.3"
   }
 }
