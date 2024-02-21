@@ -7,7 +7,7 @@
         {{-- <meta name="csrf-token" content="{{ csrf_token() }}"> --}}
         <link rel="stylesheet" href="{{ homeUrl('/assets/css/style.css', 1) }}">
         <script type="text/javascript" src="{{ homeUrl('/assets/js/script.js', 1) }}" defer></script>
-        <title>{{ settings('r', "app.name", "Nidavel") }} | Home</title>
+        <title>{{ settings('r', "general.name", "Nidavel") }} | Home</title>
     </head>
 
     <body>
