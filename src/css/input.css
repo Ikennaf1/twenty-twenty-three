@@ -153,7 +153,7 @@ body {
 }
 
 .widget-title {
-    @apply font-bold border-l border-l-4 border-l-primary-color pl-2 py-1 bg-gray-200;
+    @apply font-bold text-sm border-l border-l-4 border-l-primary-color pl-2 py-1 bg-gray-200;
 }
 
 .widget-body {
@@ -165,7 +165,7 @@ body {
 }
 
 .widget-list-item {
-    @apply block;
+    @apply py-2 block;
 }
 
 .widget-link {

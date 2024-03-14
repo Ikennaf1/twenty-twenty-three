@@ -2769,6 +2769,8 @@ body {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   padding-left: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   font-weight: 700;
 }
 
@@ -2782,6 +2784,8 @@ body {
 
 .widget-list-item{
   display: block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .widget-link{
