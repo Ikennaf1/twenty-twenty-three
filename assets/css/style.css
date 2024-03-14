@@ -617,20 +617,12 @@ video {
   position: static;
 }
 
-.\!fixed{
-  position: fixed !important;
-}
-
 .fixed{
   position: fixed;
 }
 
 .absolute{
   position: absolute;
-}
-
-.\!relative{
-  position: relative !important;
 }
 
 .relative{
@@ -720,10 +712,6 @@ video {
   -webkit-line-clamp: none;
 }
 
-.\!block{
-  display: block !important;
-}
-
 .block{
   display: block;
 }
@@ -796,10 +784,6 @@ video {
   display: inline-grid;
 }
 
-.\!contents{
-  display: contents !important;
-}
-
 .contents{
   display: contents;
 }
@@ -810,10 +794,6 @@ video {
 
 .hidden{
   display: none;
-}
-
-.h-1{
-  height: 0.25rem;
 }
 
 .h-24{
@@ -1921,10 +1901,6 @@ video {
      object-fit: scale-down;
 }
 
-.p-1{
-  padding: 0.25rem;
-}
-
 .text-left{
   text-align: left;
 }
@@ -2785,7 +2761,7 @@ body {
   line-height: 1rem;
 }
 
-.sidebar-widget-title{
+.widget-title{
   border-left-width: 4px;
   border-left-color: var(--primary-color);
   --tw-bg-opacity: 1;
@@ -2796,8 +2772,30 @@ body {
   font-weight: 700;
 }
 
-.sidebar-widget-body{
+.widget-body{
   padding-left: 0.75rem;
+}
+
+.widget-list{
+  display: block;
+}
+
+.widget-list-item{
+  display: block;
+}
+
+.widget-link{
+  font-weight: 700;
+  color: var(--secondary-color);
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+.widget-link:hover{
+  color: var(--primary-color);
 }
 
 @media (min-width: 640px){

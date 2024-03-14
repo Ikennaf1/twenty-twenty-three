@@ -152,10 +152,22 @@ body {
     @apply h-[100%] text-xs;
 }
 
-.sidebar-widget-title {
+.widget-title {
     @apply font-bold border-l border-l-4 border-l-primary-color pl-2 py-1 bg-gray-200;
 }
 
-.sidebar-widget-body {
+.widget-body {
     @apply pl-3;
+}
+
+.widget-list {
+    @apply block;
+}
+
+.widget-list-item {
+    @apply block;
+}
+
+.widget-link {
+    @apply text-secondary-color font-bold hover:text-primary-color transition duration-500;
 }
