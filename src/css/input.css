@@ -161,13 +161,13 @@ body {
 }
 
 .widget-list {
-    @apply block;
+    @apply flex flex-col gap-2;
 }
 
 .widget-list-item {
-    @apply py-2 block;
+    @apply block;
 }
 
 .widget-link {
-    @apply text-secondary-color font-bold hover:text-primary-color transition duration-500;
+    @apply text-secondary-color hover:text-primary-color transition duration-500;
 }

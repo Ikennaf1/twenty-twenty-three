@@ -1336,12 +1336,12 @@ video {
   justify-items: stretch;
 }
 
-.gap-1{
-  gap: 0.25rem;
-}
-
 .gap-16{
   gap: 4rem;
+}
+
+.gap-2{
+  gap: 0.5rem;
 }
 
 .gap-4{
@@ -2779,17 +2779,16 @@ body {
 }
 
 .widget-list{
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .widget-list-item{
   display: block;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
 
 .widget-link{
-  font-weight: 700;
   color: var(--secondary-color);
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
